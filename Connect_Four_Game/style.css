@@ -1,0 +1,186 @@
+body{
+    /* background: #0B2A49; */
+    background: url(images/midnightblue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#header{
+    color: #e0651d;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 20px 10px;
+    padding: 10px;
+}
+#header span{
+    color: #4F8CFF;
+}
+#playouts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+#playouts  button{
+    font-size: 24px;
+    padding: 10px;
+    margin: 15px;
+    background:  #4F8CFF;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+#playouts  button i{
+    padding-right: 10px;
+}
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+.popup.active{
+    display:flex;
+}
+.popup-box{
+    width:500px;
+    max-height:80vh;     
+    overflow-y:auto;
+    background:#101b3a;
+    border-radius:20px;
+    padding:30px;
+    color:white;
+    border:2px solid #4F8CFF;
+    box-shadow:0 0 30px #4F8CFF44;
+}
+.popup-box::-webkit-scrollbar{
+    display:none;
+}
+.popup h1,h3,label{
+    text-align:center;
+    margin-bottom:20px;
+}
+.popup h3{
+    font-size: 22px;
+}
+.popup label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+.popup input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-top:8px;
+    font-size:16px;
+}
+.avatars{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+.avatar1,
+.avatar2{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    cursor:pointer;
+    border:3px solid transparent;
+    transition:.3s;
+}
+.avatar1:hover,
+.avatar2:hover{
+    transform:scale(1.08);
+}
+.avatar1.active,
+.avatar2.active{
+    border:3px solid #4F8CFF;
+    box-shadow:0 0 15px #4F8CFF;
+    transform:scale(1.1);
+}
+.coin-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+.coin-buttons img{
+    width: 60px;
+}
+.coin{
+    flex:1;
+    padding:5px;
+    border:none;
+    border-radius:10px;
+    background:#1b2b52;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+.coin:hover{
+    background:#3d6fe6;
+}
+.coin.active{
+    background:#4F8CFF;
+    box-shadow:0 0 10px #4F8CFF;
+}
+#difficulty{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    margin-top:15px;
+}
+.difficulty-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+.difficulty{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#1b2b52;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+.difficulty:hover{
+    background:#3d6fe6;
+}
+.difficulty.active{
+    background:#4F8CFF;
+    box-shadow:0 0 10px #4F8CFF;
+}
+#startGame{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#4F8CFF;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+#closePopup{
+    float:right;
+    cursor:pointer;
+    font-size:30px;
+}

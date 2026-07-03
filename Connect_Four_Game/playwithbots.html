@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connect-4-game</title>
+    <link rel="stylesheet" href="playout.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="homePopup" class="popup">
+        <div class="popup-content">
+            <h2>Return to Home?</h2>
+            <p>Your current game will be lost.</p>
+            <button id="yesHomeBtn">Yes</button>
+            <button id="noHomeBtn">No</button>
+        </div>
+    </div>
+    <section id="header">
+        <h1>4 <span>in</span> A ROW <span>CONNECT</span></h1>
+    </section>
+    <section id="playouts">
+        <div id="players">
+            <button id="backBtn">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <img id="avatarTop">
+            <p id="topType"></p>
+            <h3 id="topName"></h3>
+            <img id="topCoin">
+            <div class="vs">
+                VS
+            </div>
+            <img id="bottomCoin">
+            <p id="bottomType"></p>
+            <h3 id="bottomName"></h3>
+            <img id="avatarBottom">
+        </div>
+        <div class="board-container">
+            <div id="board">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="winnerPopup" class="winner-popup">
+            <div class="winner-box">
+                <h2 id="popupTitle">🏆 Winner</h2>
+                <img id="winnerAvatar">
+                <h3 id="winnerName"></h3>
+                <img id="winnerCoin">
+                <div class="winner-buttons">
+                    <button id="playAgainBtn">Play Again</button>
+                    <button id="showResultBtn">Show Result</button>
+                    <button id="homeBtn">Home</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
